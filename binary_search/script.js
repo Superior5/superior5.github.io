@@ -23,6 +23,7 @@ const binarySearch = (list, item) => {
         if (guess === item) {
             out.innerHTML = 'Число с иднексом: ' + mid + ', за ' + step + ' шагов.';
             step = 0;
+            arr = [];
             return mid;
         }
         if (guess > item) {
